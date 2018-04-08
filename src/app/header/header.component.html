@@ -1,0 +1,18 @@
+<div class="header">
+  <mat-toolbar color="primary">
+    
+    <span>Chensi's Cook Book</span>
+    <button mat-button>Recipes</button>
+    <button mat-button>Edit</button>
+    <span class="spacer"></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Save data</button>
+      <button mat-menu-item>Fetch data</button>
+    </mat-menu>
+  </mat-toolbar>
+</div>
